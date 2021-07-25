@@ -1,0 +1,7 @@
+.right-panel-content {
+    width: 750px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid red;
+    flex-grow: 3;
+}

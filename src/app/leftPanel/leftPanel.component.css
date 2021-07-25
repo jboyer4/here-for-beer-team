@@ -1,0 +1,7 @@
+.left-panel-content {
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid green;
+    flex-grow: 1;
+}
