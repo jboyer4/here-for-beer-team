@@ -1,5 +1,5 @@
 <h2>Yoga Randomizer</h2>
 <div class=panel-holder>
-    <app-leftPanel></app-leftPanel>
-    <app-rightPanel></app-rightPanel>
+    <app-leftPanel (generateNew)="togglehasWorkout()"></app-leftPanel>
+    <app-rightPanel [showTable]="hasWorkout"></app-rightPanel>
 </div>

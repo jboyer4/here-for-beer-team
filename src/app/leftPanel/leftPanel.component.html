@@ -1,5 +1,32 @@
 <div class='left-panel-content'>
-    <p>
-        leftPanel works!
-    </p>
+    <form>
+        <div class="input">
+            <label for="duration">Set workout duration: </label> <br>
+            <select name="duration" id="duration">
+          <option value="surprise">Surprise Me</option>
+          <option value="five">5 min</option>
+          <option value="ten">10 min</option>
+          <option value="15">15 min</option>
+          <option value="30">30 min</option>
+        </select> <br>
+
+            <label for="duration">How hard do you want to go today?: </label>
+            <select name="intensity" id="intensity">
+          <option value="surprise">Surprise Me</option>
+          <option value="low">I'm trying to relax and recover</option>
+          <option value="med">Warm me up</option>
+          <option value="high">Make me sweat</option>
+        </select><br>
+
+            <label for="duration">Any focus areas? </label>
+            <select name="focus" id="focus">
+          <option value="any">Any</option>
+          <option value="low">Tight legs/hamstrings</option>
+          <option value="med">Sore back</option>
+          <option value="high">Tight neck and shoulder</option>
+        </select><br>
+        </div>
+        <input (click)="generateWorkout()" type="submit" value="Generate">
+    </form>
+    <button (click)="generateWorkout()" value="Randomize">Randomize</button>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-leftPanel',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leftPanel.component.css']
 })
 export class LeftPanelComponent implements OnInit {
-
+  @Output() generateNew = new EventEmitter<boolean>();
   constructor() { }
-
+  public generateWorkout(){
+    this.generateNew.emit();
+  }
   ngOnInit() {
   }
 
